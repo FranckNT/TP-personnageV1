@@ -1,0 +1,27 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+import Personnage.Personnage;
+
+
+public class jeuPersonnage {
+  public jeuPersonnage() {
+  }
+
+
+  public static void main(String[] var0) {
+     Personnage var1 = new Personnage("Sorcier", 70);
+     System.out.println("La vie du sorcier est " + var1.LaVie());
+     Personnage var2 = new Personnage("Magicien", 100);
+     System.out.println("La vie du magicien est " + var2.LaVie());
+     System.out.println("Le nom du sorcier = " + var1.LeNom());
+     System.out.println("Le nom du magicien = " + var2.LeNom());
+     System.out.println("La vie du sorcier est " + var1.LaVie());
+     var1.AugmenterVie(10);
+     System.out.println("Apres la vie du sorcier est " + var1.LaVie());
+     System.out.println("le magicien attaque le sorcier ...");
+     var2.Attaque(var1, 40);
+     System.out.println("Atak La vie du magicien est " + var2.LaVie());
+     System.out.println("Atak La vie du sorcier est " + var1.LaVie());
+  }
+}
+
+

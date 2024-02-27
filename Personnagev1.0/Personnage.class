@@ -1,0 +1,35 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package Personnage;
+
+
+public class Personnage {
+  private String nom;
+  private int vie;
+
+
+  public Personnage(String var1, int var2) {
+     this.nom = var1;
+     this.vie = var2;
+  }
+
+
+  public String LeNom() {
+     return this.nom;
+  }
+
+
+  public int LaVie() {
+     return this.vie;
+  }
+
+
+  public void AugmenterVie(int var1) {
+     this.vie += var1;
+  }
+
+
+  public void Attaque(Personnage var1, int var2) {
+     var1.vie -= var2 / 2;
+     this.vie -= var2 / 2;
+  }
+}
